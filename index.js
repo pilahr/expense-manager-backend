@@ -1,14 +1,14 @@
 require("dotenv").config();
+const cors = require("cors");
 const express = require("express");
 const mongoose = require("mongoose");
 const Product = require("./productModel");
 const app = express();
 
+app.use(cors({ origin: "https://expense-manager-frontend-e1ae8.web.app/" }));
 app.use(express.json());
 
-app.get("/ex", (req, res) => {
-  res.send("HELLO WORLD");
-});
+
 // READ
 app.get("/expenses", async (req, res) => {
   try {
