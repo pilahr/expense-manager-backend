@@ -6,7 +6,7 @@ const Product = require("./productModel");
 const app = express();
 
 app.use(cors({ origin: "https://expense-manager-frontend-e1ae8.web.app/" }));
-app.use(cors({ origin: "http://localhost:3000" }));
+// app.use(cors({ origin: "http://localhost:3000" }));
 app.use(express.json());
 
 // READ//
