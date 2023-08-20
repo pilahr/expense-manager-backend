@@ -15,7 +15,7 @@ const productSchema = mongoose.Schema(
       required: [true, "Please select the category"],
     },
     date: {
-      type: Number,
+      type: String,
       require: [true],
     },
     month: {
